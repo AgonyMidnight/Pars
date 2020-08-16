@@ -132,7 +132,7 @@ class Repository
         echo  "<br> Simple: {$this->type_s}";
     }
 
-    public function get_find_work(string $condition){
+    public function get_find_work(string $condition) {
         echo "<table border = '1'>";
         echo "<tr>
         <th>ID</th>
@@ -151,9 +151,9 @@ class Repository
         ";
         $this->type_c = 0;
         $this->type_s = 0;
-        foreach ($this->array_entity as $value){
+        foreach ($this->array_entity as $value) {
             $find = strripos ($value->Name, $condition);
-            if($find){
+            if($find !== false) {
                 echo "<tr>
                 <td>$value->ID</td>
                 <td> <img src = '$value->Thumbnail' alt=''> </td>
