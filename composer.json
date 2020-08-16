@@ -1,0 +1,15 @@
+{
+    "name": "agony/pars",
+    "authors": [
+        {
+            "name": "AgonyMidnight",
+            "email": "agony.midnight.am@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

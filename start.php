@@ -10,7 +10,7 @@ price > 100 < 700
 то вместо картинки вывести placeholder
 https://via.placeholder.com/200x200.png?text=Image+not+found
 после таблицы посчитать у скольких продуктов type = configurable, type = simple*/
-    require __DIR__ . "/autoload.php";
+    require __DIR__ . "/vendor/autoload.php";
 
     $One = new Repository("export");
     switch ($_GET['switch']){
@@ -21,8 +21,9 @@ https://via.placeholder.com/200x200.png?text=Image+not+found
             $One->get_range_price(100,700);
             break;
         case 3:
-            $One->get_find_work("Foam");
+            $One->get_find_work($_GET['text']);
             break;
     }
+
     //$One->setArrayEntity();
    // echo $One->array_entity[1]->Price;
