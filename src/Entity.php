@@ -48,7 +48,8 @@ class Entity
        // $this->set_img_plug();
     }
 
-    private function set_img_plug(){                        //нерабочая ф-я
+    private function set_img_plug()
+    {                                                       //нерабочая ф-я
        if(!file_get_contents($this->Thumbnail)) {           //file_get_contents показывал фокусы
            $this->setImgPlug();                             //которые не фиксиились
            $this->Thumbnail = $this->img_plug;

@@ -40,7 +40,8 @@ class Repository
         $this->setArrayEntity();
    }
 
-   public function get_positiv_quantity(int $condition){
+   public function get_positiv_quantity(int $condition)
+   {
 
        echo "<table border = '1'>";
        echo "<tr>
@@ -87,7 +88,8 @@ class Repository
        echo  "<br> Simple: {$this->type_s}";
    }
 
-    public function get_range_price(int $condition1,int $condition2){
+    public function get_range_price(int $condition1,int $condition2)
+    {
         echo "<table border = '1'>";
         echo "<tr>
         <th>ID</th>
@@ -132,7 +134,8 @@ class Repository
         echo  "<br> Simple: {$this->type_s}";
     }
 
-    public function get_find_work(string $condition) {
+    public function get_find_work(string $condition)
+    {
         echo "<table border = '1'>";
         echo "<tr>
         <th>ID</th>

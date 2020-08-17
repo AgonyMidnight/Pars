@@ -12,8 +12,9 @@ https://via.placeholder.com/200x200.png?text=Image+not+found
 после таблицы посчитать у скольких продуктов type = configurable, type = simple*/
     require __DIR__ . "/vendor/autoload.php";
 
-    $One = new Repository("export");
-    switch ($_GET['switch']){
+
+    $One = new Repository();
+    switch ($_GET['switch']) {
         case 1:
             $One->get_positiv_quantity(0);
             break;
